@@ -1,0 +1,37 @@
+{
+  "name": "contest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www --exec ./node_modules/.bin/babel-node",
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill",
+    "test:watch": "mocha --compilers js:babel-core/register --require babel-polyfill --watch",
+    "build": "babel lib -d dist",
+    "serve": "node dist/www.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.6.5",
+    "body-parser": "^1.13.3",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^3.0.0",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0",
+    "valid-email": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-plugin-transform-es2015-destructuring": "^6.6.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.0",
+    "babel-polyfill": "^6.7.2",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-plumber": "^1.0.0",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.9.1"
+  }
+}
