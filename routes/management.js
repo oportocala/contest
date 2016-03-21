@@ -13,4 +13,9 @@ router.get('/reload-contestants', (req, res) => {
     });
 });
 
+router.get('/health-check', (req, res) => {
+  res.writeHead(200);
+  res.end('OK');
+});
+
 module.exports = router;

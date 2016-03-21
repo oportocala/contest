@@ -39,8 +39,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/vote', vote);
-app.use('/management', management);
 app.use('/list', list);
+app.use('/management', management);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
